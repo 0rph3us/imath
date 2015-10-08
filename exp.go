@@ -3,5 +3,5 @@ package imath
 import "math"
 
 func Exp(x int) int {
-    return int(math.Exp(float64(x)))
+	return int(math.Exp(float64(x)))
 }
