@@ -74,21 +74,21 @@ func TestPow(t *testing.T) {
 	}
 	for i, n := range input {
 		if x := Pow(5, n); want5[i] != x {
-			t.Errorf("Pow(%g) = %g, want %g", n, x, want5[i])
+			t.Errorf("Pow(%d) = %d, want %d", n, x, want5[i])
 		}
 
 		if x := Pow(8, n); want8[i] != x {
-			t.Errorf("Pow(%g) = %g, want %g", n, x, want8[i])
+			t.Errorf("Pow(%d) = %d, want %d", n, x, want8[i])
 		}
 
 		if x := Pow(10, n); want10[i] != x {
-			t.Errorf("Pow(%g) = %g, want %g", n, x, want10[i])
+			t.Errorf("Pow(%d) = %d, want %d", n, x, want10[i])
 		}
 	}
 
 	for i, n := range inputSpecial {
 		if x := Pow(5, n); wantSpecial[i] != x {
-			t.Errorf("Pow(%g) = %g, want %g", n, x, wantSpecial[i])
+			t.Errorf("Pow(%d) = %d, want %d", n, x, wantSpecial[i])
 		}
 	}
 

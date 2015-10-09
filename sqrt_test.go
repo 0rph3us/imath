@@ -25,20 +25,20 @@ func TestSqrt(t *testing.T) {
 	for i := 0; i < len(vi); i++ {
 		a := vi[i]
 		if f := Sqrt(a); sqrt[i] != f {
-			t.Errorf("Sqrt(%g) = %g, want %g", a, f, sqrt[i])
+			t.Errorf("Sqrt(%d) = %d, want %d", a, f, sqrt[i])
 		}
 	}
 
 	for i := 0; i < len(vi); i++ {
 		a := vi[i]
 		if f := Sqrt2(a); sqrt[i] != f {
-			t.Errorf("Sqrt(%g) = %g, want %g", a, f, sqrt[i])
+			t.Errorf("Sqrt(%d) = %d, want %d", a, f, sqrt[i])
 		}
 	}
 	for i := 0; i < len(vi); i++ {
 		a := vi[i]
 		if f := Sqrt3(a); sqrt[i] != f {
-			t.Errorf("Sqrt(%g) = %g, want %g", a, f, sqrt[i])
+			t.Errorf("Sqrt(%d) = %d, want %d", a, f, sqrt[i])
 		}
 	}
 }

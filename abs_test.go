@@ -26,7 +26,7 @@ func TestAbs(t *testing.T) {
 	}
 	for i, n := range input {
 		if abs := Abs(n); want[i] != abs {
-			t.Errorf("Abs(%g) = %g, want %g", n, abs, want[i])
+			t.Errorf("Abs(%d) = %d, want %d", n, abs, want[i])
 		}
 	}
 
